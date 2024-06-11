@@ -14,7 +14,7 @@ Como um cliente, eu gostaria de sacar dinheiro em um caixa eletrônico, para que
     And check more outcomes
     
 ## Cenário 2: Cliente comum com saldo negativo
-    Scenario Outline: Cliente comum com saldo negativo
+    Scenario: Cliente comum com saldo negativo
     Given Um cliente comum com saldo atual de -200 reais
     When Solicitar um saque de 200 reais
     Then não deve efetuar o saque e deve retornar a mensagem Saldo Insuficiente
